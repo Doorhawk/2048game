@@ -1,0 +1,3 @@
+arrows for game
+A/D to change field size
+R restart
