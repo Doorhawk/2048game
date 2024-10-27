@@ -18,6 +18,25 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\game.cpp" />
+    <ClCompile Include="source\main.cpp" />
+    <ClCompile Include="source\random.cpp" />
+    <ClCompile Include="source\windowManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lib\sfml-graphics-d-2.dll" />
+    <None Include="lib\sfml-system-d-2.dll" />
+    <None Include="lib\sfml-window-d-2.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="resources\arialmt.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\game.h" />
+    <ClInclude Include="source\random.h" />
+    <ClInclude Include="source\windowManager.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -129,17 +148,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="game.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="random.cpp" />
-    <ClCompile Include="windowManager.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="game.h" />
-    <ClInclude Include="random.h" />
-    <ClInclude Include="windowManager.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

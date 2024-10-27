@@ -21,7 +21,7 @@ WindowManager::WindowManager() {
     createWindow(width, height);
 
     window.setVerticalSyncEnabled(true);
-    if (!font.loadFromFile("arialmt.ttf")) {
+    if (!font.loadFromFile("resources/arialmt.ttf")) {
         std::cout << "font not founded";
     }
 
