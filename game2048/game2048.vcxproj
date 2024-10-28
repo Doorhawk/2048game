@@ -32,6 +32,10 @@
     <ClInclude Include="source\random.h" />
     <ClInclude Include="source\windowManager.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\gif\gameplay.gif" />
+    <Image Include="..\gif\size.gif" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>

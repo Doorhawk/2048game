@@ -155,12 +155,12 @@ void WindowManager::drawGame() {
         }
 
         CircleShape tr(10.f, 3), tr1(10.f, 3), tr2(10.f, 3), tr3(10.f, 3);
-        tr.setPosition(30, height - 70);
-        tr1.setPosition(50, height - 20);
+        tr.setPosition(30, width - 70);
+        tr1.setPosition(50, width - 20);
         tr1.rotate(180);
-        tr2.setPosition(65, height - 55);
+        tr2.setPosition(65, width - 55);
         tr2.rotate(90);
-        tr3.setPosition(15, height - 35);
+        tr3.setPosition(15, width - 35);
         tr3.rotate(-90);
         Color col(170, 170, 170);
         tr.setFillColor(col);

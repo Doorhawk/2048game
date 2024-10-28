@@ -13,6 +13,9 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
+    <Filter Include="gif">
+      <UniqueIdentifier>{f1762d0d-ae8a-470f-abbd-ae105a3483bf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\game.cpp">
@@ -43,5 +46,13 @@
     <ClInclude Include="source\windowManager.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\gif\gameplay.gif">
+      <Filter>gif</Filter>
+    </Image>
+    <Image Include="..\gif\size.gif">
+      <Filter>gif</Filter>
+    </Image>
   </ItemGroup>
 </Project>
