@@ -6,6 +6,8 @@ using namespace sf;
 
 WindowManager::WindowManager() {
 
+    pressedKey = 0;
+
     tileSize = 80;
     
     gameDifficult = 3;
@@ -151,6 +153,48 @@ void WindowManager::drawGame() {
             }
 
         }
+
+        CircleShape tr(10.f, 3), tr1(10.f, 3), tr2(10.f, 3), tr3(10.f, 3);
+        tr.setPosition(30, height - 70);
+        tr1.setPosition(50, height - 20);
+        tr1.rotate(180);
+        tr2.setPosition(65, height - 55);
+        tr2.rotate(90);
+        tr3.setPosition(15, height - 35);
+        tr3.rotate(-90);
+        Color col(170, 170, 170);
+        tr.setFillColor(col);
+        tr1.setFillColor(col);
+        tr2.setFillColor(col);
+        tr3.setFillColor(col);
+
+        Color dark(100, 100, 100);
+        switch (pressedKey)
+        {
+        case 0:
+            break;
+        case 1:
+            tr3.setFillColor(Color(100, 100, 100));
+            break;
+        case 2:
+            tr2.setFillColor(Color(100, 100, 100));
+            break;
+        case 3:
+            tr.setFillColor(Color(100, 100, 100));
+            break;
+        case 4:
+            tr1.setFillColor(Color(100, 100, 100));
+            break;
+        default:
+            break;
+        }
+
+        window.draw(tr);
+        window.draw(tr1);
+        window.draw(tr2);
+        window.draw(tr3);
+
+
         if (game.is_game_end()) {
 
             rec1.setFillColor(Color(200, 200, 200, 200));
@@ -207,8 +251,6 @@ void WindowManager::drawFrame() {
     window.clear(Color(200,200,200));
     drawGame();
     window.display();
-
-
 }
 void WindowManager::controlButtons(Event ev) {
 
@@ -221,15 +263,19 @@ void WindowManager::controlButtons(Event ev) {
         }
         if (ev.key.code == Keyboard::Left) {
             game.left();
+            pressedKey = 1;
         }
         if (ev.key.code == Keyboard::Right) {
             game.right();
+            pressedKey = 2;
         }
         if (ev.key.code == Keyboard::Up) {
             game.up();
+            pressedKey = 3;
         }
         if (ev.key.code == Keyboard::Down) {
             game.down();
+            pressedKey = 4;
         }
         
         
@@ -252,11 +298,11 @@ void WindowManager::createWindow(int wight, int height) {
     if (height < 1) {
         height = 1;
     }
-    window.create(VideoMode(wight, height), L"Bomb", Style::Default);
+    window.create(VideoMode(wight, height), L"2048", Style::Default);
 }
 
 void WindowManager::restartGame() {
     
     game.restart();
-    
+    pressedKey = 0;
 }

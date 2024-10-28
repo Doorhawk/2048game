@@ -24,13 +24,13 @@ private:
 
 	void restartGame();
 
-
+	int pressedKey;
 	int tileSize;
 	int height;
 	int width;
 	int gameDifficult;
 	int gameSizeX;
-		int gameSizeY;
+	int gameSizeY;
 	Game2048 game;
 	sf::RenderWindow window;
 	sf::Font font;
