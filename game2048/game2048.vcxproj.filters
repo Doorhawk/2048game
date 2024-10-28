@@ -29,17 +29,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="lib\sfml-graphics-d-2.dll">
-      <Filter>Файлы ресурсов</Filter>
-    </None>
-    <None Include="lib\sfml-system-d-2.dll">
-      <Filter>Файлы ресурсов</Filter>
-    </None>
-    <None Include="lib\sfml-window-d-2.dll">
-      <Filter>Файлы ресурсов</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <Font Include="resources\arialmt.ttf">
       <Filter>Файлы ресурсов</Filter>
     </Font>

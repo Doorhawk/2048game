@@ -25,11 +25,6 @@
     <ClCompile Include="source\windowManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="lib\sfml-graphics-d-2.dll" />
-    <None Include="lib\sfml-system-d-2.dll" />
-    <None Include="lib\sfml-window-d-2.dll" />
-  </ItemGroup>
-  <ItemGroup>
     <Font Include="resources\arialmt.ttf" />
   </ItemGroup>
   <ItemGroup>
